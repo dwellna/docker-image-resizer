@@ -8,7 +8,7 @@ vars = {
 
   NODE_ENV: 'development',
   PORT: 3001,
-  DEFAULT_SOURCE: 's3',
+  DEFAULT_SOURCE: 'elocal',
   EXCLUDE_SOURCES: null, // add comma delimited list
 
   // Restrict to named modifiers strings only
@@ -34,7 +34,7 @@ vars = {
 
   // Optimization options
   IMAGE_PROGRESSIVE: true,
-  IMAGE_QUALITY: 80,
+  IMAGE_QUALITY: 100,
 
   // Cache expiries
   IMAGE_EXPIRY: 60 * 60 * 24 * 90,
@@ -46,7 +46,7 @@ vars = {
   QUEUE_LOG: true,
 
   // Response settings
-  CACHE_DEV_REQUESTS: false,
+  CACHE_DEV_REQUESTS: true,
 
   // Twitter settings
   TWITTER_CONSUMER_KEY: null,
