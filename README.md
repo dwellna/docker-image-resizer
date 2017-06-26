@@ -18,7 +18,7 @@ When a new image size is requested of `image-resizer` via the CDN, it will pull 
 
 ## Getting Started
 
-    $ npm install -g tripviss/image-resizer gulp
+    $ npm install -g zalari/image-resizer gulp
     $ mkdir my_fancy_image_server
     $ cd my_fancy_image_server
     $ image-resizer new
