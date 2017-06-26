@@ -7,8 +7,7 @@ module.exports = function(image, callback){
 
   // create the sharp object
   var r = sharp(image.contents);
-
   // apply the filter and pass on the stream
-  r.sharpen().toBuffer(callback);
+  r.sharpen(1).toBuffer(callback);
 
 };
