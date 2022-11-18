@@ -1,11 +1,11 @@
-FROM node:7
+FROM node:14
 
 # https://github.com/yarnpkg/yarn/issues/2266
-RUN yarn global add node-gyp
+RUN yarn global add @npmcli/fs
 
 WORKDIR /srv/image-resizer-instance
 
-RUN yarn global add https://github.com/zalari/image-resizer/ \
+RUN yarn global add https://github.com/dwellna/docker-image-resizer/ \
 	&& image-resizer new \
 	&& yarn install --production \
 	&& yarn add ejs \
