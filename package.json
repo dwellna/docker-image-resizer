@@ -11,7 +11,6 @@
     "resize",
     "node",
     "sharp",
-    "libvips",
     "heroku",
     "optimization"
   ],
@@ -22,7 +21,7 @@
     "image-resizer": "./bin/image_resizer.js"
   },
   "engines": {
-    "node": "0.12.x"
+    "node": "^14.17.0"
   },
   "dependencies": {
     "aws-sdk": "~2.0.0-rc9",
@@ -38,7 +37,7 @@
     "mkdirp": "^0.5.0",
     "morgan": "^1.7.0",
     "request": "^2.81.0",
-    "sharp": "^0.16.0",
+    "sharp": "^0.31.2",
     "twit": "~1.1.15"
   },
   "devDependencies": {
