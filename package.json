@@ -20,7 +20,7 @@
     "image-resizer": "./bin/image_resizer.js"
   },
   "engines": {
-    "node": "^14.17.0"
+    "node": "^16.18.1"
   },
   "dependencies": {
     "aws-sdk": "~2.0.0-rc9",

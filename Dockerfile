@@ -1,11 +1,9 @@
-FROM node:14
+FROM node:16
 
 # https://github.com/yarnpkg/yarn/issues/2266
 RUN yarn global add @npmcli/fs
 
 WORKDIR /srv/image-resizer-instance
-
-RUN yarn install 1.9.4
 
 RUN yarn global add https://github.com/dwellna/docker-image-resizer/ \
 	&& image-resizer new \
