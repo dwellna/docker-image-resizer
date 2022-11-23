@@ -15,7 +15,7 @@
   ],
   "author": "James Nicol <james.andrew.nicol@gmail.com> (https://github.com/jimmynicol)",
   "license": "MIT",
-  "repository": "git://github.com/dwellna/docker-image-resizer",
+  "repository": "https://github.com/dwellna/docker-image-resizer",
   "bin": {
     "image-resizer": "./bin/image_resizer.js"
   },
