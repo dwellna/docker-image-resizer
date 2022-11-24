@@ -5,8 +5,7 @@ RUN yarn global add @npmcli/fs
 
 WORKDIR /srv/image-resizer-instance
 
-RUN yarn global add https://github.com/dwellna/docker-image-resizer/ \
-	&& image-resizer new \
+RUN yarn add https://github.com/dwellna/docker-image-resizer/ \
 	&& yarn install --production \
 	&& yarn add ejs \
 	&& yarn cache clean
@@ -14,3 +13,4 @@ RUN yarn global add https://github.com/dwellna/docker-image-resizer/ \
 RUN yarn global add pm2
 
 ENTRYPOINT ["pm2-docker", "./server.js"]
+#ENTRYPOINT ["bash"]
