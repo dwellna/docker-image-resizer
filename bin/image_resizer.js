@@ -62,7 +62,7 @@ function createApplicationAt(dir){
       'express': pkg.dependencies.express,
       'image-resizer': 'dwellna/docker-image-resizer#v' + pkg.version,
       'lodash': pkg.dependencies.lodash,
-      'sharp': pkg.dependencies.sharp
+      'sharp': '0.31.2'
     },
     devDependencies: pkg.devDependencies,
     engines: {

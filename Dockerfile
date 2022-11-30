@@ -13,5 +13,5 @@ RUN yarn add https://github.com/dwellna/docker-image-resizer/ \
 
 RUN yarn global add pm2
 
-ENTRYPOINT ["pm2-docker", "./server.js"]
-#ENTRYPOINT ["bash"]
+#ENTRYPOINT ["pm2-docker", "./server.js"]
+ENTRYPOINT ["bash"]
